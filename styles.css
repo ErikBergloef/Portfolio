@@ -1,0 +1,155 @@
+/* Grundinställningar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    line-height: 1.6;
+    background-color: black;
+}
+
+p {
+    font-weight: 200;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+
+#hero {
+    height: 100vh;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 4rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color: #eb3700;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+section {
+    padding: 4rem 2rem;
+    color:#f4f4f4
+    border solid white;
+}
+
+h2 {
+    color: #f4f4f4;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#about {
+    color:#f4f4f4
+}
+
+#projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+   
+}
+
+.project {
+    color: rgb(248, 248, 248);
+    padding: 2rem;
+    text-align: center;
+}
+
+
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5%;
+}
+
+#contact form {
+    color: #f4f4f4;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+form textarea {
+    height: 6rem;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #eb3700;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.4rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+    height: 4rem;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 0.9em;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Erik Berglöf - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <h1>Welcome to my Portfolio</h1>
+        <p>My name is Erik Berglöf, Fullstack Web developer student.</p>
+        <!-- Knappen i hero-sektionen -->
+        <a href="#projects" class="btn">My Projects</a>
+
+    </section>
+
+    <!-- OM MIG SEKTION -->
+    <section id="about">
+        <h2>About</h2>
+        <p>32 year old dude from Borlänge, Dalarna.</p>
+    </section>
+
+    <!-- PROJEKT SEKTION -->
+    <section id="projects">
+        <h2>My projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="https://static.wixstatic.com/media/f2bddc_ebad7e7b30744e8dbf5072db79d56d6e~mv2.jpg/v1/fill/w_680,h_606,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Vespa_01.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>This is project 1.</p>
+            </div>
+            <div class="project">
+                <img src="https://static.wixstatic.com/media/f2bddc_e69a3a869efd4e23b5d9bcc7dad452f2~mv2.png/v1/fill/w_680,h_606,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Render_01_edited.png" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>This is project 2.</p>
+            </div>
+            <!-- Lägg till fler projekt -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="submit-form.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Erik Berglöf. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+<script src="script.js"></script>
